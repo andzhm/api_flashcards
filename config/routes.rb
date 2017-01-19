@@ -1,2 +1,2 @@
-Rails.application.routes.draw do
+ApiFlashcards::Engine.routes.draw do
 end

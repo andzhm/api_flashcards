@@ -9,14 +9,14 @@ Gem::Specification.new do |s|
   s.version     = ApiFlashcards::VERSION
   s.authors     = ["ZhmAA"]
   s.email       = ["azhm@ukr.net"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ApiFlashcards."
-  s.description = "TODO: Description of ApiFlashcards."
+  s.homepage    = "https://github.com/ZhmAA/api_flashcards"
+  s.summary     = "Summary of ApiFlashcards."
+  s.description = "Description of ApiFlashcards."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.0.0", ">= 5.0.0.1"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "pg"
 end
