@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.3.1
+env: RAILS_ENV=test
+script:
+- bundle exec rspec
+before_script:
+- cp spec/dummy/config/database.travis.yml spec/dummy/config/database.yml
+- psql -c 'create database dummy_test' -U postgres
+- bundle exec rake db:migrate
