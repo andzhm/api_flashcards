@@ -9,6 +9,7 @@ group :development, :test do
   gem "rspec-rails"
   gem 'factory_girl_rails'
   gem 'byebug'
+  gem 'listen'
 end
 
 # Declare any dependencies that are still in development here instead of in
